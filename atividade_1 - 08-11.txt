@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CalculoSalario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o salário: ");
+        double salario = scanner.nextDouble();
+        System.out.print("Digite o abono salarial: ");
+        double abonoSalarial = scanner.nextDouble();
+
+        double novoSalario = salario + abonoSalarial;
+
+        System.out.println("O novo salário é: " + novoSalario);
+
+        scanner.close();
+    }
+}
+
