@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class SomaComparacao {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+
+        System.out.print("Digite o número A: ");
+        int A = sc.nextInt();
+        
+        System.out.print("Digite o número B: ");
+        int B = sc.nextInt();
+        
+        System.out.print("Digite o número C: ");
+        int C = sc.nextInt();
+
+        int soma = A + B;
+
+        System.out.println(A + " + " + B + " = " + soma + " " + (soma > C ? ">" : (soma < C ? "<" : "=")) + " " + C);
+
+        if (soma > C) {
+            System.out.println("A Soma de A + B é Maior do que C");
+        } else if (soma < C) {
+            System.out.println("A Soma de A + B é Menor do que C");
+        } else {
+            System.out.println("A Soma de A + B é Igual a C");
+        }
+
+        sc.close();
+    }
+}
